@@ -43,7 +43,7 @@ function getTasks() {
     // Add class
     link.className = 'delete-item secondary-content';
     // Add icon html
-    link.innerHTML = '<i class="fa fa-trash fa-lg"></i>'; 
+    link.innerHTML = '<i class="fa fa-trash fa-lg"></i>';
     li.appendChild(link);
 
     // Append li to ul
@@ -55,6 +55,7 @@ function getTasks() {
 function addTask(e) {
   if(taskInput.value === '') {
     alert('Add a task');
+    return false;
   }
 
   // Create li element
@@ -68,7 +69,7 @@ function addTask(e) {
   // Add class
   link.className = 'delete-item secondary-content';
   // Add icon html
-  link.innerHTML = '<i class="fa fa-remove"></i>';
+  link.innerHTML = '<i class="fa fa-trash fa-lg"></i>';
   // Append the link to li
   li.appendChild(link);
 
